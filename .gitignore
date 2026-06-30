@@ -45,3 +45,6 @@ postgres-data/
 coverage/
 .coverage
 htmlcov/
+
+# Internal spec (not published)
+.kiro/
