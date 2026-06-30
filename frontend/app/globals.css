@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html,
+body {
+  background-color: #060a06;
+  color: #eaf2ea;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* App background: subtle green vignette + faint grid */
+.app-bg {
+  background-color: #060a06;
+  background-image:
+    radial-gradient(800px 360px at 50% -8%, rgba(59, 230, 107, 0.08), transparent 65%),
+    radial-gradient(circle at 1px 1px, rgba(59, 230, 107, 0.04) 1px, transparent 0);
+  background-size: auto, 34px 34px;
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-surface-border bg-surface-raised;
+  }
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors;
+  }
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #1e2a1e;
+  border-radius: 8px;
+}

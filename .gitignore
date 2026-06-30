@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.onnx
+!tools/sample_models/*.onnx
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+!**/sample*.key
+infra/mosquitto/passwd
+infra/mosquitto/passwd
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+
+# Data / artifacts
+*.log
+data/
+snapshots/
+minio-data/
+postgres-data/
+coverage/
+.coverage
+htmlcov/
